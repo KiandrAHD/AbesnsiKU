@@ -265,9 +265,9 @@ function ScanQR() {
             ))}
           </div>
 
-          <div className="relative flex min-h-[360px] items-center justify-center overflow-hidden rounded-2xl bg-slate-950">
+          <div className="relative flex min-h-90 items-center justify-center overflow-hidden rounded-2xl bg-slate-950">
             <video
-              className={`h-full min-h-[360px] w-full object-cover ${cameraActive ? "block" : "hidden"}`}
+              className={`h-full min-h-90 w-full object-cover ${cameraActive ? "block" : "hidden"}`}
               muted
               playsInline
               ref={videoRef}

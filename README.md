@@ -190,7 +190,6 @@ Troubleshooting & tips:
 Contact / Next steps:
 - If you want, I can help: add stricter Firestore Rules, add server-side verification for QR payloads, or create a CI/CD pipeline for automated deployments.
 
----
+--------------
 
-End of README
-
+End of README 
