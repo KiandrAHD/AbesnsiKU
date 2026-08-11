@@ -45,17 +45,15 @@ function StatPanel({ icon: Icon, color, value, title, note }) {
 function QuickAction({ to, icon: Icon, title, note, primary }) {
   return (
     <Link
-      className={`flex items-center gap-4 rounded-2xl border p-5 shadow-sm transition ${
-        primary
+      className={`flex items-center gap-4 rounded-2xl border p-5 shadow-sm transition ${primary
           ? "border-blue-600 bg-blue-600 text-white shadow-blue-600/20 hover:bg-blue-700"
           : "border-slate-200 bg-white text-slate-900 hover:border-blue-200"
-      }`}
+        }`}
       to={to}
     >
       <div
-        className={`flex h-11 w-11 items-center justify-center rounded-2xl ${
-          primary ? "bg-white/15 text-white" : "bg-emerald-50 text-emerald-600"
-        }`}
+        className={`flex h-11 w-11 items-center justify-center rounded-2xl ${primary ? "bg-white/15 text-white" : "bg-emerald-50 text-emerald-600"
+          }`}
       >
         <Icon size={20} />
       </div>

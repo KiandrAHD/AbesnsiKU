@@ -113,7 +113,7 @@ function ScanQR() {
     await updateDoc(sessionRef, {
       totalScans: increment(1),
       updatedAt: serverTimestamp(),
-    }).catch(() => {});
+    }).catch(() => { });
 
     if (!sessionSnapshot.exists()) {
       throw new Error("Sesi QR tidak ditemukan.");
@@ -193,7 +193,7 @@ function ScanQR() {
     await updateDoc(sessionRef, {
       successfulScans: increment(1),
       updatedAt: serverTimestamp(),
-    }).catch(() => {});
+    }).catch(() => { });
   };
 
   const startCamera = async () => {
@@ -253,9 +253,8 @@ function ScanQR() {
               ["check-out", "Check-out (Pulang)"],
             ].map(([value, label]) => (
               <button
-                className={`rounded-xl px-4 py-3 text-sm font-black ${
-                  scanMode === value ? "bg-blue-600 text-white" : "text-slate-500 hover:bg-slate-50"
-                }`}
+                className={`rounded-xl px-4 py-3 text-sm font-black ${scanMode === value ? "bg-blue-600 text-white" : "text-slate-500 hover:bg-slate-50"
+                  }`}
                 key={value}
                 type="button"
                 onClick={() => setScanMode(value)}
@@ -302,11 +301,10 @@ function ScanQR() {
 
           {(feedback || error) && (
             <div
-              className={`rounded-2xl border px-4 py-3 text-sm font-bold ${
-                feedback
+              className={`rounded-2xl border px-4 py-3 text-sm font-bold ${feedback
                   ? "border-emerald-200 bg-emerald-50 text-emerald-700"
                   : "border-rose-200 bg-rose-50 text-rose-700"
-              }`}
+                }`}
             >
               {feedback || error}
             </div>

@@ -147,13 +147,12 @@ function RiwayatAbsensi() {
               ))}
               {calendarDays.map((day) => (
                 <div
-                  className={`flex aspect-square min-w-0 items-center justify-center rounded-lg text-[11px] font-black sm:rounded-xl sm:text-sm ${
-                    day.blank
+                  className={`flex aspect-square min-w-0 items-center justify-center rounded-lg text-[11px] font-black sm:rounded-xl sm:text-sm ${day.blank
                       ? ""
                       : day.day === todayKey
                         ? statusColors.selected
                         : statusColors[day.status] || "text-slate-500"
-                  }`}
+                    }`}
                   key={day.id}
                 >
                   {!day.blank && day.day}

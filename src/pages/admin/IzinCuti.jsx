@@ -65,9 +65,8 @@ function IzinCuti() {
           <div className="grid rounded-2xl border border-slate-200 bg-white p-1 shadow-sm sm:grid-cols-4">
             {filters.map((item) => (
               <button
-                className={`rounded-xl px-4 py-3 text-sm font-black ${
-                  filter === item.value ? "bg-blue-600 text-white" : "text-slate-500 hover:bg-slate-50"
-                }`}
+                className={`rounded-xl px-4 py-3 text-sm font-black ${filter === item.value ? "bg-blue-600 text-white" : "text-slate-500 hover:bg-slate-50"
+                  }`}
                 key={item.value}
                 type="button"
                 onClick={() => setFilter(item.value)}
@@ -85,11 +84,10 @@ function IzinCuti() {
           ) : (
             filteredRequests.map((request) => (
               <button
-                className={`block w-full rounded-2xl border bg-white p-5 text-left shadow-sm transition ${
-                  activeDetail?.id === request.id
+                className={`block w-full rounded-2xl border bg-white p-5 text-left shadow-sm transition ${activeDetail?.id === request.id
                     ? "border-blue-600 ring-4 ring-blue-100"
                     : "border-slate-200 hover:border-blue-200"
-                }`}
+                  }`}
                 key={request.id}
                 type="button"
                 onClick={() => setSelected(request)}

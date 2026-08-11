@@ -53,10 +53,9 @@ function AdminSidebar({ profile, onLogout }) {
             return (
               <NavLink
                 className={({ isActive }) =>
-                  `flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-bold transition ${
-                    isActive
-                      ? "bg-blue-600 text-white shadow-lg shadow-blue-600/20"
-                      : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"
+                  `flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-bold transition ${isActive
+                    ? "bg-blue-600 text-white shadow-lg shadow-blue-600/20"
+                    : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"
                   }`
                 }
                 end={item.end}
@@ -145,8 +144,7 @@ function AdminMobileNav() {
           return (
             <NavLink
               className={({ isActive }) =>
-                `flex flex-col items-center gap-1 rounded-xl px-1 py-2 text-[10px] font-bold ${
-                  isActive ? "bg-blue-600 text-white" : "text-slate-500"
+                `flex flex-col items-center gap-1 rounded-xl px-1 py-2 text-[10px] font-bold ${isActive ? "bg-blue-600 text-white" : "text-slate-500"
                 }`
               }
               end={item.end}

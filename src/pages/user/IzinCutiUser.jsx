@@ -143,11 +143,10 @@ function IzinCutiUser() {
           <div className="grid gap-3 sm:grid-cols-2">
             {leaveTypes.map((type) => (
               <label
-                className={`flex cursor-pointer items-center gap-3 rounded-2xl border px-4 py-3 text-sm font-black ${
-                  form.type === type.value
+                className={`flex cursor-pointer items-center gap-3 rounded-2xl border px-4 py-3 text-sm font-black ${form.type === type.value
                     ? "border-blue-600 bg-blue-50 text-blue-700"
                     : "border-slate-200 text-slate-700 hover:bg-slate-50"
-                }`}
+                  }`}
                 key={type.value}
               >
                 <input
@@ -208,9 +207,8 @@ function IzinCutiUser() {
 
           {(message || error) && (
             <p
-              className={`mt-4 rounded-2xl px-4 py-3 text-sm font-bold ${
-                message ? "bg-emerald-50 text-emerald-700" : "bg-rose-50 text-rose-700"
-              }`}
+              className={`mt-4 rounded-2xl px-4 py-3 text-sm font-bold ${message ? "bg-emerald-50 text-emerald-700" : "bg-rose-50 text-rose-700"
+                }`}
             >
               {message || error}
             </p>

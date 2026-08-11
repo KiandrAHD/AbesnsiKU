@@ -194,11 +194,10 @@ function Karyawan() {
         <div className="flex flex-wrap gap-2">
           {divisions.map((item) => (
             <button
-              className={`rounded-2xl border px-4 py-2 text-sm font-bold ${
-                division === item
+              className={`rounded-2xl border px-4 py-2 text-sm font-bold ${division === item
                   ? "border-blue-600 bg-blue-600 text-white"
                   : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
-              }`}
+                }`}
               key={item}
               type="button"
               onClick={() => setDivision(item)}
